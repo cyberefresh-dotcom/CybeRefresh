@@ -1,23 +1,23 @@
 
 
 
-import React, { useEffect, useRef, useState } from 'react';
+import React from 'react';
 import Navbar from '../components/Navbar';
-import SubServices from '../components/SubServices';
 import IndustrySpecialization from '../components/IndustrySpecialization';
 import Footer from '../components/Footer';
 import Crousel from '../components/Crousel';
 import Services from '../components/Services';
 import LetsTalk from '../components/LetsTalk';
-import DigitalTransformationSection from '../components/Digital';
+import WhoWeAreComponent from '../components/WhoWeAreComponent';
+
 
 const Home = () => {
 
   return (
     <div>
-    <header>
+    <header >
       <Navbar/>
-      <Crousel/>
+      <Crousel />
     </header>
     
 
@@ -25,16 +25,15 @@ const Home = () => {
       <main className="   py-10 ">
         {/* <Services /> */}
         <Services/>
-        <DigitalTransformationSection/>
+        {/* Who We Are Component */}
+        <WhoWeAreComponent/>
         {/* Call to Action */}
         <LetsTalk/>
         {/* Industry Specialization */}
         <IndustrySpecialization />
       </main>
 
-      <footer>
-      {/* <Footer /> */}
-      </footer>
+      <Footer />
     </div>
   );
 };
